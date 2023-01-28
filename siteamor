@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Love Button</title>
+<link rel="stylesheet" href="css/index.css">
+<script src="js/index.js"></script>
+  <style>
+    #love-heart {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  <button id="love-button">clique aqui</button>
+  <p id="message" style="display: none;">Eu amo a vaninha</p>
+  <img id="love-heart" src="https://image.flaticon.com/icons/svg/291/291217.svg" alt="Love Heart" height="100" width="100">
+  <script>
+    const button = document.querySelector("#love-button");
+    const message = document.querySelector("#message");
+    const loveHeart = document.querySelector("#love-heart");
+    button.addEventListener("click", () => {
+      message.style.display = "block";
+      loveHeart.style.display = "block";
+    });
+  </script>
+</body>
+</html>
